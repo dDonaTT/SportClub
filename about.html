@@ -1,66 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KB Peja - About Us</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="./js/pixi.min.js"></script>
+  </head>
+  <body>
     <header>
-        <div class="container">
-           <a href="index.html"> <img src="/images/logo.png" alt="KB Peja Logo" class="logo"></a>
+      <div class="container">
+        <a href="index.html">
+          <img src="/images/logo.png" alt="KB Peja Logo" class="logo" />
+        </a>
 
-            <h1>KB Peja</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" class="active">About</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="index.html#media">Media</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>KB Peja</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="talk.html">Wild Talk</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About KB Peja</h2>
-            <p>Welcome to the official website of KB Peja, the leading basketball team in our region. Established in 1948, we have a rich history of success and sportsmanship.</p>
-        </div>
-    </section>
-
     <section id="history" class="section">
-        <div class="container">
-            <h2>History</h2>
-            <p>KB Peja was founded in 1948 and has since grown to become one of the most successful basketball teams in our region. Our journey is marked by numerous championships and a commitment to excellence.</p>
-        </div>
+      <div class="container">
+        <h2>History</h2>
+        <img src="/images/history.jpg" alt="" />
+        <p>
+          Ishte data 13 Mars e vitit 1993 kur në qytetin e Pejës krijohet
+          zyrtarisht ekipi me emrin “Klubi Basketbollistik Peja”, e qe sot është
+          klubi më i organizuar dhe i dyti më i trofeshmi në basketbollin e
+          Kosovës. Edhe pse ky klub muaj më heret kishte filluar garat e sezones
+          1992/93, krijimi zyrtar i saj u bë në Marsin e vitit 1993. Kryetar i
+          parë i klubit ishte Ilahmi Gashi, sekretar Riza Gjakova, trajner
+          Valdet Spahija e Mit’hat Belegu, ndihmës-trajner Rexhep Kelmendi dhe
+          Avdurahman Belegu, ndërsa me ekipin e të rinjeve filluan të punojnë
+          Afrim Zeqiri dhe Jakup Kasapolli. Kryesia e parë e KB Pejës përbehej
+          nga: Ahmet Nimani, Besim Gjuka, Sebajdin Sylejmani, Agim Lluka, Riza
+          Gjakova, Valdet Spahija, Agim Beqiraj dhe Turhan Zajmi. Ngjyrat verdhë
+          e zi ishin propozim i Valdet Spahiut, i cili këto ngjyra i kishte
+          zgjedhur nga KK Jugopllastika (tani e njohur si KK Split) e cila në
+          kohën e themelimit tonë shkelte çdo kundershtar në Jugosllavinë dhe
+          Evropën e atehershme. Kryesia e klubit kishte një qëllim dhe ai qellim
+          vazhdon të jetë pjesë e klubit edhe në ditët e sotme: KB Peja të jetë
+          në majet e basketbollit të Kosovës. Kështu edhe ndodhi gjatë gjithë
+          historisë së KB Pejës, pasi që është i vetmi ekip në Kosovë që secilën
+          sezonë që morri pjesë ne Supërligën e Kosovës arriti te kualifikohej
+          ne top katër ekipet e para dhe në gjysemfinale të Kupës së Kosovës. Në
+          sezonën 2013/14 KB Peja për herë të parë në historinë e basketbollit
+          të Kosovës morri pjesë garat e Liges Ballkanike (e njohur si Balkan
+          International Basketball League – BIBL). Kështu, me 15 Tetor të vitit
+          2013, KB Peja ishte ekipi i parë nga Kosova që zhvilloj një ndeshje
+          ndërkombëtare në një ligë ndërkombëtare të njohur nga FIBA.
+        </p>
+        <p>
+          KB Peja sezonen e parë të saj e ka zhvilluar në periudhen 1992/93 dhe
+          menjëherë në sezonën e saj të parë ajo arriti të shkonte në finale dhe
+          të shpallej kampion i Kosovës. Kjo skuadër edhe në sezonën e saj të
+          dytë (1993/94) arriti të shkonte në finale ku prap do takohej me KB
+          Trepçen. Kjo ndeshje u zhvillua në qytetin e Prizrenit dhe KB Peja e
+          fitoj me rezultat të thellë 63-32 duke arritur që të fitonte titullin
+          e dytë të ekipit.
+        </p>
+      </div>
     </section>
-
     <section id="trophies" class="section">
-        <div class="container">
-            <h2>Trophies</h2>
+      <div class="container">
+        <h2>Trophies</h2>
+        <div class="trophy-container">
+          <div class="trophy-block">
+            <h3>Kampion</h3>
             <ul class="trophies-list">
-                <li>Kampion - 1994</li>
-                <li>Kampion - 1993</li>
-                <li>Kampion - 1995</li>
-                <li>Kampion - 1996</li>
-                <li>Kampion - 2004</li>
-                <li>Kampion- 2013</li>
-                <li>Kupa e Kosovës - 1994</li>
-                <li>Kupa e Kosovës - 1997</li>
-                <li>Kupa e Kosovës - 2011</li>
-                <li>Superkupa - 1997</li>
-                <li>Superkupa - 2015</li>
+              <li>Kampion - 1994</li>
+              <li>Kampion - 1993</li>
+              <li>Kampion - 1995</li>
+              <li>Kampion - 1996</li>
+              <li>Kampion - 2004</li>
+              <li>Kampion - 2013</li>
+              <li>Kampion - 2023</li>
+
             </ul>
+          </div>
+          <div class="trophy-block">
+            <h3>Kupa</h3>
+            <ul class="trophies-list">
+              <li>Kupa e Kosovës - 1994</li>
+              <li>Kupa e Kosovës - 1995</li>
+              <li>Kupa e Kosovës - 1997</li>
+              <li>Kupa e Kosovës - 2011</li>
+              <li>Kupa e Kosovës - 2015</li>
+              <li>Kupa e Kosovës - 2020</li>
+
+            </ul>
+          </div>
+          <div class="trophy-block">
+            <h3>Superkupa</h3>
+            <ul class="trophies-list">
+              <li>Superkupa - 1997</li>
+              <li>Superkupa - 2015</li>
+              <li>Liga Unike - 2022</li>
+
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
     
 
+    <div class="text-video mt-5" style="text-align: center;">
+      <h1>Champion through the years</h1>
+    </div>
+    <div class="slider row">
+      <div id="pixi-con"></div>
+      <input
+        type="range"
+        id="image-slider"
+        min="0"
+        max="7"
+        value="0"
+        class="mt-4"
+      />
+    </div>
+    <script src="./js/about.js"></script>
+   
+
     <footer>
-        <div class="container">
-            <p>&copy; 2024 KB Peja. All rights reserved.</p>
-        </div>
+      <div class="container">
+        <p>&copy; 2024 KB Peja. All rights reserved.</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

@@ -1,114 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KB Peja - Official Website</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <a href="index.html"> <img src="/images/logo.png" alt="KB Peja Logo" class="logo"></a>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <script src="pixi.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="index.html">
+          <img src="/images/logo.png" alt="KB Peja Logo" class="logo"
+        /></a>
 
         <h1>KB Peja</h1>
         <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="#media">Media</a></li>
-            </ul>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="talk.html">Wild Talk</a></li>
+
+          </ul>
         </nav>
-    </div>
-</header>
+      </div>
+    </header>
 
     <section id="home">
-        <div class="slider">
-            <div class="slides">
-                <div class="slide"><img src="/images/slide.jpg" alt="Slide 1"></div>
-                <div class="slide"><img src="/images/slide1.jpg" alt="Slide 2"></div>
-                <div class="slide"><img src="/images/slide2.jpg" alt="Slide 3"></div>
-            </div>
-            <div class="controls">
-                <span class="prev">&#10094;</span>
-                <span class="next">&#10095;</span>
-            </div>
+      <div class="home-slider">
+        <div class="slides">
+          <div class="slide"><img src="/images/slide.jpg" alt="Slide 1" /></div>
+          <div class="slide">
+            <img src="/images/slide1.jpg" alt="Slide 2" />
+          </div>
+          <div class="slide">
+            <img src="/images/slide2.jpg" alt="Slide 3" />
+          </div>
         </div>
+        <div class="controls">
+          <span class="prev">&#10094;</span>
+          <span class="next">&#10095;</span>
+        </div>
+      </div>
     </section>
     <section id="news" class="section">
       <div class="container">
-          <h2>Latest News</h2>
-          <div class="news-slider">
-            <div class="news-item">
-              <img src="/images/news2.jpg" alt="News 2">
-              <h3>Rami Hadar vazhdon me Kb Pejen</h3>
-              <p>Coach of Kb Peja extends contract one more year...</p>
+        <h2>Latest News</h2>
+        <div class="news-slider">
+          <div class="news-item">
+            <img src="/images/news2.jpg" alt="News 2" />
+            <h3>Rami Hadar vazhdon me Kb Pejen</h3>
+            <p>Coach of Kb Peja extends contract one more year...</p>
           </div>
-              <div class="news-item">
-                  <img src="/images/news.jpg" alt="News 1">
-                  <h3>Kb Peja eliminohet nga Playoff</h3>
-                  <p>Losing to Kb Ylli eliminates the club...</p>
-              </div>
-              <div class="news-item">
-                  <img src="/images/roster.jpg" alt="News 2">
-                  <h3>Publikohet ekipi i plot</h3>
-                  <p>Description of the news...</p>
-              </div>
-              <div class="news-item">
-                <img src="/images/news2.jpg" alt="News 2">
-                <h3>News Title 2</h3>
-                <p>Description of the news...</p>
-            </div><div class="news-item">
-              <img src="/images/news2.jpg" alt="News 2">
-              <h3>News Title 2</h3>
-              <p>Description of the news...</p>
-          </div><div class="news-item">
-            <img src="/images/news2.jpg" alt="News 2">
+          <div class="news-item">
+            <img src="/images/news.jpg" alt="News 1" />
+            <h3>Kb Peja eliminohet nga Playoff</h3>
+            <p>Losing to Kb Ylli eliminates the club...</p>
+          </div>
+          <div class="news-item">
+            <img src="/images/roster.jpg" alt="News 2" />
+            <h3>Publikohet ekipi i plot</h3>
+            <p>Description of the news...</p>
+          </div>
+          <div class="news-item">
+            <img src="/images/news2.jpg" alt="News 2" />
             <h3>News Title 2</h3>
             <p>Description of the news...</p>
-        </div><div class="news-item">
-          <img src="/images/news2.jpg" alt="News 2">
-          <h3>News Title 2</h3>
-          <p>Description of the news...</p>
-      </div><div class="news-item">
-        <img src="/images/news2.jpg" alt="News 2">
-        <h3>News Title 2</h3>
-        <p>Description of the news...</p>
-    </div><div class="news-item">
-      <img src="/images/news2.jpg" alt="News 2">
-      <h3>News Title 2</h3>
-      <p>Description of the news...</p>
-  </div>
-              
           </div>
-      </div>
-  </section>
-  
-
-    <section id="media" class="section">
-        <div class="container">
-            <h2>Media</h2>
-            <div class="video-grid">
-                <div class="video">
-                    <iframe src="https://www.youtube.com/embed/examplevideo1" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="video">
-                    <iframe src="https://www.youtube.com/embed/examplevideo2" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
+          <div class="news-item">
+            <img src="/images/news2.jpg" alt="News 2" />
+            <h3>News Title 2</h3>
+            <p>Description of the news...</p>
+          </div>
+          <div class="news-item">
+            <img src="/images/news2.jpg" alt="News 2" />
+            <h3>News Title 2</h3>
+            <p>Description of the news...</p>
+          </div>
+          <div class="news-item">
+            <img src="/images/news2.jpg" alt="News 2" />
+            <h3>News Title 2</h3>
+            <p>Description of the news...</p>
+          </div>
+          <div class="news-item">
+            <img src="/images/news2.jpg" alt="News 2" />
+            <h3>News Title 2</h3>
+            <p>Description of the news...</p>
+          </div>
+          <div class="news-item">
+            <img src="/images/news2.jpg" alt="News 2" />
+            <h3>News Title 2</h3>
+            <p>Description of the news...</p>
+          </div>
         </div>
+      </div>
     </section>
 
-   
-
     <footer>
-        <div class="container">
-            <p>&copy; 2024 KB Peja. All rights reserved.</p>
-        </div>
+      <div class="container">
+        <p>&copy; 2024 KB Peja. All rights reserved.</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

@@ -29,7 +29,7 @@ header .logo {
 
 header h1 {
   margin: 0;
-  margin-left: 0.5rem; 
+  margin-left: 0.5rem;
 }
 header nav {
   margin-left: auto;
@@ -48,11 +48,11 @@ nav a {
 }
 
 nav a:hover {
-  color: #ffffff; 
+  color: #ffffff;
 }
 
 nav a.active {
-  font-weight: bold; 
+  font-weight: bold;
   color: #d6b025;
 }
 
@@ -65,16 +65,18 @@ nav a.active {
   color: #ffcc00;
   margin-bottom: 1rem;
 }
+.section p {
+  text-align: justify;
+}
 
 .section .container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.slider {
+.home-slider {
   position: relative;
   max-width: 100%;
-  
   overflow: hidden;
 }
 
@@ -89,24 +91,24 @@ nav a.active {
   box-sizing: border-box;
 }
 .news-slider {
-  overflow-x: auto; 
+  overflow-x: auto;
   white-space: nowrap;
   margin-bottom: 20px;
-  scrollbar-width: thin; 
-  scrollbar-color: #050505 transparent; 
+  scrollbar-width: thin;
+  scrollbar-color: #050505 transparent;
 }
 
 .news-slider::-webkit-scrollbar {
-  width: 8px; 
+  width: 8px;
 }
 
 .news-slider::-webkit-scrollbar-thumb {
-  background-color: #999; 
-  border-radius: 4px; 
+  background-color: #999;
+  border-radius: 4px;
 }
 
 .news-slider::-webkit-scrollbar-track {
-  background-color: transparent; 
+  background-color: transparent;
 }
 
 .news-item {
@@ -197,14 +199,36 @@ nav a.active {
   max-width: 45%;
 }
 
+.trophy-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+
+.trophy-block {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: left;
+  color: #ffffff;
+}
+
+.trophy-block h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ffcc00;
+}
+
 .trophies-list {
   list-style: none;
   padding: 0;
-  text-align: left;
 }
 
 .trophies-list li {
   margin: 0.5rem 0;
+  font-size: 1.1rem;
 }
 
 footer {
@@ -212,4 +236,37 @@ footer {
   color: #ffcc00;
   text-align: center;
   padding: 1rem 0;
+}
+
+#image-slider {
+  appearance: none;
+  width: 54%;
+  height: 20px;
+  background: #a6b914;
+  outline: none;
+  border-radius: 50px;
+}
+#image-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+#pixi-con {
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  max-height: 600px;
 }
