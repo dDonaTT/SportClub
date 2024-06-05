@@ -6,8 +6,28 @@
     <title>KB Peja - Team</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
-    <script src="pixi.min.js"></script>
+    <script src="/js/pixi.min.js" defer></script>
+    <style>
+        #team {
+            position: relative;
+            overflow: hidden;
+        }
 
+        #pixi-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0; 
+            pointer-events: none; 
+        }
+
+        .team-content {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -26,14 +46,15 @@
     </header>
 
     <section id="team" class="section">
-        <div class="container">
+        <canvas id="pixi-canvas"></canvas>
+        <div class="container team-content">
             <h2>Our Team</h2>
             <div class="coach-box">
                 <img src="/images/coach.png" alt="Head Coach">
                 <h3>Head Coach: Rami Hadar</h3>
                 <p>Experience: 15 Years</p>
             </div>
-            <div class="team-grid"  id="team-container">
+            <div class="team-grid" id="team-container">
                 <div class="team-member">
                     <img src="/images/0.jpg" alt="Q. Chandler III">
                     <h3>J. Chandler III</h3>
@@ -102,8 +123,36 @@
         <div class="container">
             <p>&copy; 2024 KB Peja. All rights reserved.</p>
         </div>
-       
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const app = new PIXI.Application({
+                view: document.getElementById('pixi-canvas'),
+                width: document.getElementById('team').offsetWidth,
+                height: document.getElementById('team').offsetHeight,
+                transparent: true
+            });
     
+            const basketballTexture = PIXI.Texture.from('/images/basketball.png');
+            const basketball = new PIXI.Sprite(basketballTexture);
+            basketball.anchor.set(0.5);
+            basketball.scale.set(0.1); 
+            app.stage.addChild(basketball);
+    
+            document.getElementById('team').addEventListener("mousemove", function (event) {
+                const rect = document.getElementById('team').getBoundingClientRect();
+                const mouseX = event.clientX - rect.left;
+                const mouseY = event.clientY - rect.top;
+    
+                basketball.position.set(mouseX, mouseY);
+            });
+    
+            
+            window.addEventListener("resize", function () {
+                app.renderer.resize(document.getElementById('team').offsetWidth, document.getElementById('team').offsetHeight);
+            });
+        });
+    </script>
 </body>
 </html>
